@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Advanced Todo List</h1>
+        <input type="text" id="newTask" placeholder="Enter a new task">
+        <button onclick="addTask()">Add</button>
+
+        <div class="filter-container">
+            <button class="filter-btn" onclick="filterTasks('all')">All</button>
+            <button class="filter-btn" onclick="filterTasks('active')">Active</button>
+            <button class="filter-btn" onclick="filterTasks('completed')">Completed</button>
+        </div>
+
+        <ul id="taskList"></ul>
+    </div>
+    <script src="mainFile.js"></script>
+</body>
+
+</html>
